@@ -11,7 +11,8 @@ Please follow these steps:
 1. `cd` into the new repo in your terminal
 1. Execute the following commands in the new repo directory, which will setup your DS&A folders:
    - `bash <(curl -s https://raw.githubusercontent.com/codefellows/setup-guide/master/code-301/code-challenges/bin/dsa.sh)`
-   - `perl -i -pe's|/code-301-guide/|/code-301-guide-react/|' ./code-challenges/bin/get-challenge.sh`
+   - `cd javascript`
+   - `npm install`
 1. When it's done, verify that things are working properly by running a test. Enter this command:
    - `npm test`
    - You should see a message like the following, indicating that things are setup properly and tests are passing

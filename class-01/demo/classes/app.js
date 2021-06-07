@@ -27,7 +27,7 @@ class Cat extends Animal {
 
     constructor(name, breed, color, sound) {
         super(name, breed, color)
-        this.sound = sound
+        this.sound = sound;
     }
 
     ruinFurniture() {

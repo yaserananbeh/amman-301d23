@@ -9,10 +9,15 @@ Please follow these steps:
 1. On github.com, create a new, empty repository called `data-structures-and-algorithms` in your account.
 1. Clone your newly-created repository to your machine, in your `codefellows` folder
 1. `cd` into the new repo in your terminal
-1. Execute the following commands in the new repo directory, which will setup your DS&A folders:
-   - `bash <(curl -s https://raw.githubusercontent.com/codefellows/setup-guide/master/code-301/code-challenges/bin/dsa.sh)`
-   - `cd javascript`
+1. Go to this [github](https://github.com/LTUC/dsa-template) repo and clone it inside your cloned repo:
+2. `cd` into the cloned repo
+   - `cd dsa-template`
+3. run the following commands:
+   - `npm run shift-dir`
+   - `cd ../`
+   - `npm run clean-up`
    - `npm install`
+
 1. When it's done, verify that things are working properly by running a test. Enter this command:
    - `npm test`
    - You should see a message like the following, indicating that things are setup properly and tests are passing

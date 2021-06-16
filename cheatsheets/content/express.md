@@ -103,21 +103,21 @@ require('dotenv').config();
 
 ___
 
-[superagent](https://www.npmjs.com/package/superagent) "A package used to send requests over the internet to other servers or APIs"
+[superagent](https://www.npmjs.com/package/axios) "A package used to send requests over the internet to other servers or APIs"
 
 - install
 
 ```shell
-npm install superagent
+npm install axios
 ```
 
 - usage
 
 ```js
-const superagent = require('superagent'); // require the package
+const axios = require('axios'); // require the package
 
 // inside your callback function
-superagent.get(url).then(data => data.body).catch(error => console.log(error));
+axios.get(url).then(response => response.data).catch(error => console.log(error));
 ```
 
 ___

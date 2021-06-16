@@ -16,7 +16,7 @@ Please follow these steps:
    - `npm run shift-dir`
    - `cd ../`
    - `npm run clean-up`
-   - `npm run install-packages`
+   - `npm install`
 
 1. When it's done, verify that things are working properly by running a test. Enter this command:
    - `npm test`

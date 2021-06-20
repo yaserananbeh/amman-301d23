@@ -43,7 +43,7 @@ const weatherController = (req, res) => {
                 console.log('Storing the data from the request into our cache');
                 console.log('=====================');
                 // store the location and the data in the object
-                cacheObj[requestKey].data = responseData;
+                cacheObj[requestKey] = { data: responseData };
                 cacheObj[requestKey].timestamp = Date.now();
                 res.json(responseData)
             }).catch(error => {

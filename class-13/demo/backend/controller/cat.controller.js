@@ -58,9 +58,9 @@ const updateCat = (request, response) => {
 const deleteCat = (request, response) => {
     console.log(request.params)
     const catIndex = request.params.cat_idx;
-    const { userEmail } = request.body;
+    const { email } = request.query;
 
-    userModel.findOne({ email: userEmail }, (error, userData) => {
+    userModel.findOne({ email: email }, (error, userData) => {
         if (error) {
             response.send(error)
         } else {
